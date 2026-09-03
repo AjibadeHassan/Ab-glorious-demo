@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AB Glorious Cartons Packaging — B2B Manufacturing in Lagos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* Industrial B2B Palette */
+  --ink:#1A1F2B;
+  --moss:#2C3E50;
+  --slate:#606F7B;
+  --paper:#F8F9FA;
+  --white:#fff;
+  --copper:#E67E22; /* Cardboard Orange */
+  --copper-lt:#F39C12;
+  --copper-dk:#D35400;
+  --verify:#27AE60;
+  --hair:rgba(26,31,43,.13);
+
+  --display:'Space Grotesk',system-ui,sans-serif;
+  --body:'IBM Plex Sans',system-ui,sans-serif;
+  --pad:clamp(1.25rem,5vw,4rem);
+  --band:clamp(3.5rem,8vw,6.5rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--white);padding-bottom:76px}
+@media(min-width:861px){body{padding-bottom:0}}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-dk)}
+.d-xl{font-family:var(--display);font-weight:700;font-size:clamp(2.5rem,8.5vw,4.4rem);line-height:1.02;letter-spacing:-.032em}
+.d-lg{font-family:var(--display);font-weight:700;font-size:clamp(1.85rem,5vw,2.9rem);line-height:1.08;letter-spacing:-.024em}
+.d-sm{font-family:var(--display);font-weight:600;font-size:1.12rem;line-height:1.3;letter-spacing:-.012em}
+.lede{font-size:clamp(1.02rem,2.2vw,1.2rem);line-height:1.58;color:var(--slate)}
+.fine{font-size:.8125rem;line-height:1.5;color:var(--slate)}
+
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.band{padding-top:var(--band);padding-bottom:var(--band)}
+.band--dark{background:var(--ink);color:var(--white)}
+.band--dark .lede{color:rgba(255,255,255,.64)}
+.band--dark .eyebrow{color:var(--copper-lt)}
+.band--wash{background:var(--paper)}
+.head{max-width:56ch;margin-bottom:clamp(2rem,4vw,3rem)}
+.head .d-lg{margin:.5rem 0 .75rem}
+
+/* header */
+.top{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--hair)}
+.top__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px}
+.mark{display:flex;align-items:baseline;gap:.5rem;font-family:var(--display);font-weight:700;letter-spacing:-.02em;text-decoration:none}
+.mark__a{font-size:1.2rem}
+.mark__b{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:600}
+.top__call{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:700;font-size:.98rem;text-decoration:none;padding:.5rem .9rem;border-radius:3px;background:var(--ink);color:var(--white);white-space:nowrap}
+@media(max-width:520px){.top__call span.lbl{display:none}}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:var(--white);overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(110% 75% at 85% 0%,rgba(230,126,34,.20),transparent 60%)}
+.hero__in{position:relative;z-index:2;display:grid;gap:clamp(2.25rem,5vw,3.75rem);align-items:center}
+@media(min-width:960px){.hero__in{grid-template-columns:1.1fr .9fr}}
+.hero__rule{width:52px;height:4px;background:var(--copper);margin-bottom:1.25rem}
+.hero h1{margin:.4rem 0 1.1rem}
+.hero__sub{max-width:36ch;color:rgba(255,255,255,.7);font-size:clamp(1.02rem,2.2vw,1.18rem);line-height:1.58}
+
+/* tracks */
+.tracks{display:grid;gap:.85rem;margin-top:2rem}
+@media(min-width:620px){.tracks{grid-template-columns:1fr 1fr}}
+.track{display:block;text-decoration:none;border-radius:5px;padding:1.15rem 1.25rem;transition:transform .15s ease}
+.track:hover{transform:translateY(-2px)}
+.track--now{background:var(--copper);color:var(--ink)}
+.track--plan{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.28)}
+.track b{display:block;font-family:var(--display);font-weight:700;font-size:1.22rem;letter-spacing:-.015em;margin-bottom:.15rem}
+.track span{font-size:.88rem;opacity:.82;line-height:1.4}
+
+/* verify */
+.verify{background:var(--white);color:var(--ink);border-radius:8px;box-shadow:0 24px 60px rgba(0,0,0,.34);overflow:hidden;max-width:440px}
+.verify__top{background:var(--moss);color:#fff;padding:.75rem 1.15rem;display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.verify__top strong{font-family:var(--display);font-weight:700;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase}
+.verify__top span{font-family:var(--display);font-weight:600;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;opacity:.68}
+.vrow{display:flex;align-items:center;gap:.9rem;padding:.85rem 1.15rem;border-bottom:1px solid var(--hair)}
+.vrow:last-child{border-bottom:0}
+.vrow__b{flex:1;min-width:0}
+.vrow__b dt{font-family:var(--display);font-weight:700;font-size:.86rem;letter-spacing:-.01em}
+.vrow__b dd{font-size:.78rem;color:var(--slate);line-height:1.35;margin-top:.1rem}
+.vrow__v{font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:.01em;color:var(--copper-dk);white-space:nowrap}
+.vrow__v small{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);font-weight:600}
+.verify__foot{padding:.85rem 1.15rem;background:var(--paper);font-size:.74rem;color:var(--slate);line-height:1.45}
+.verify__foot a{color:var(--verify);font-weight:600}
+
+/* split */
+.split{display:grid;gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:6px;overflow:hidden}
+@media(min-width:820px){.split{grid-template-columns:1fr 1fr}}
+.col{background:var(--white);padding:clamp(1.5rem,3.5vw,2.5rem)}
+.col--plan{background:var(--paper)}
+.col h3{margin:.55rem 0 .9rem}
+.col ul{list-style:none;margin-top:1.1rem}
+.col li{display:flex;gap:.6rem;align-items:flex-start;padding:.5rem 0;border-top:1px solid var(--hair);font-size:.95rem;line-height:1.45}
+.col li:first-child{border-top:0}
+.tick{flex:0 0 auto;width:16px;height:16px;margin-top:3px;color:var(--verify)}
+.col__cta{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.4rem;font-family:var(--display);font-weight:700;font-size:1.02rem;text-decoration:none;padding:.75rem 1.15rem;border-radius:4px;background:var(--ink);color:#fff}
+.col--plan .col__cta{background:var(--copper);color:var(--ink)}
+
+/* layout features */
+.ren{display:grid;gap:clamp(2rem,4vw,3.5rem);align-items:start}
+@media(min-width:900px){.ren{grid-template-columns:1.05fr .95fr}}
+.ren p+p{margin-top:1rem}
+.svc{list-style:none;display:grid;gap:.6rem}
+@media(min-width:700px){.svc{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.svc{grid-template-columns:repeat(3,1fr)}}
+.svc li{display:flex;gap:.6rem;align-items:flex-start;font-size:.95rem;line-height:1.45;padding:.65rem .85rem;background:var(--paper);border-radius:4px}
+.areas{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
+.area{font-family:var(--display);font-weight:600;font-size:.88rem;border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:.45rem .85rem}
+.area--home{background:var(--copper);color:var(--ink);border-color:var(--copper)}
+.about{display:grid;gap:clamp(2rem,4vw,3.5rem);align-items:start}
+@media(min-width:900px){.about{grid-template-columns:1.1fr .9fr}}
+.about p+p{margin-top:1rem}
+.facts{list-style:none;border-top:2px solid var(--ink)}
+.facts li{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--hair);font-size:.94rem}
+.facts b{font-family:var(--display);font-weight:700}
+.facts span{color:var(--slate);text-align:right}
+.form-grid{display:grid;gap:clamp(2rem,4vw,3.5rem)}
+@media(min-width:900px){.form-grid{grid-template-columns:.9fr 1.1fr}}
+.field{margin-bottom:1rem}
+.field label{display:block;font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem}
+.field input,.field select,.field textarea{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);padding:.8rem .9rem;border:1px solid rgba(26,31,43,.22);border-radius:4px;background:var(--white)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--ink);outline:2px solid var(--copper);outline-offset:1px}
+.submit{width:100%;border:0;cursor:pointer;background:var(--ink);color:#fff;font-family:var(--display);font-weight:700;font-size:1.05rem;padding:1rem;border-radius:4px}
+.submit:hover{background:var(--moss)}
+.sent{background:rgba(39,174,96,.08);border:1px solid rgba(39,174,96,.35);border-radius:4px;padding:1.1rem;color:var(--verify);font-weight:500}
+[hidden]{display:none !important}
+.foot{background:var(--ink);color:rgba(255,255,255,.56);font-size:.85rem}
+.foot__in{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:space-between;padding-top:2.5rem;padding-bottom:2.5rem}
+.foot a{color:var(--copper-lt);text-decoration:none}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--copper);border-top:2px solid rgba(0,0,0,.16)}
+.bar a{display:flex;align-items:center;justify-content:center;gap:.6rem;padding:1.15rem;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:700;font-size:1.18rem}
+@media(min-width:861px){.bar{display:none}}
+.demo-note{background:var(--moss);color:rgba(255,255,255,.74);font-family:var(--display);font-weight:600;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:.5rem 1rem}
+
+.rise{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rise.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.track{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="mark" href="#top"><span class="mark__a">AB Glorious</span><span class="mark__b">Cartons & Packaging</span></a>
+    <a class="top__call" href="https://wa.me/2347078776964" target="_blank">
+      <span class="lbl">WhatsApp Sales</span>
+    </a>
+  </div>
+</header>
+
+<section class="hero band" id="top">
+  <div class="wrap hero__in">
+    <div>
+      <div class="hero__rule"></div>
+      <p class="eyebrow">B2B Manufacturing · 5.0 Rated</p>
+      <h1 class="d-xl">Quality packaging.<br>Built to protect<br>your products.</h1>
+      <p class="hero__sub">Top-rated carton manufacturing and custom packaging solutions in Nigeria. From retail product boxes to heavy-duty industrial shipping cartons.</p>
+
+      <div class="tracks">
+        <a class="track track--now" href="https://wa.me/2347078776964">
+          <b>Talk to Sales</b>
+          <span>Chat instantly on WhatsApp</span>
+        </a>
+        <a class="track track--plan" href="#quote">
+          <b>Request a Bulk Quote</b>
+          <span>Get pricing and material specifications</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="verify rise">
+      <div class="verify__top">
+        <strong>Verified Manufacturer</strong>
+        <span>Company Standing</span>
+      </div>
+      <dl>
+        <div class="vrow">
+          <div class="vrow__b"><dt>Business Rating</dt><dd>Verified Customer Reviews</dd></div>
+          <div class="vrow__v">5.0<small>Out of 5</small></div>
+        </div>
+        <div class="vrow">
+          <div class="vrow__b"><dt>Location</dt><dd>Agege Industrial Area</dd></div>
+          <div class="vrow__v">Lagos<small>Factory</small></div>
+        </div>
+        <div class="vrow">
+          <div class="vrow__b"><dt>Contact</dt><dd>Direct Sales & WhatsApp</dd></div>
+          <div class="vrow__v">+234<small>707 877 6964</small></div>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="help">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Our Supply Chain</p>
+      <h2 class="d-lg">Packaging built for logistics and retail.</h2>
+    </div>
+
+    <div class="split">
+      <div class="col rise">
+        <p class="eyebrow">Retail & Product</p>
+        <h3 class="d-sm">Food & Display Cartons</h3>
+        <p class="fine" style="font-size:.95rem;color:var(--slate)">Safe, standardized packaging tailored to make your products stand out on the shelf.</p>
+        <ul>
+          <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Safe, reliable FMCG packaging</li>
+          <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> High-quality brand printing</li>
+          <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Custom die-cut shapes</li>
+        </ul>
+      </div>
+
+      <div class="col col--plan rise">
+        <p class="eyebrow">Industrial Logistics</p>
+        <h3 class="d-sm">Heavy Duty Shipping Boxes</h3>
+        <p class="fine" style="font-size:.95rem;color:var(--slate)">Durable transit boxes manufactured to protect your goods during nationwide distribution.</p>
+        <ul>
+          <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Corrugated shipping cartons</li>
+          <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Custom sizes on demand</li>
+          <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Bulk supply for factories</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--dark" id="portfolio">
+  <div class="wrap ren">
+    <div class="rise">
+      <p class="eyebrow">Manufacturing Output</p>
+      <h2 class="d-lg" style="margin:.5rem 0 1.1rem">Durability meets strict design tolerances.</h2>
+      <p class="lede">We produce packaging that withstands transit while maintaining sharp, legible branding. We supply businesses across Lagos with reliable, high-volume cardboard and custom prints.</p>
+      <p class="lede">By owning our manufacturing process, we ensure strict quality control and highly competitive bulk pricing directly from the factory floor.</p>
+    </div>
+    
+    <div class="rise" style="border-radius:8px; overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c28ea?auto=format&fit=crop&w=800&q=80" style="width:100%; display:block; object-fit:cover; aspect-ratio:4/3;" alt="Industrial Cartons & Packaging">
+    </div>
+  </div>
+</section>
+
+<section class="band band--wash" id="services">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Capabilities</p>
+      <h2 class="d-lg">Everything we produce.</h2>
+    </div>
+    <ul class="svc rise">
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Corrugated Shipping Boxes</li>
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Custom Retail Packaging</li>
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Food Grade Cartons</li>
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Die-Cut Display Boxes</li>
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> High-Volume Printing</li>
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Cardboard Inserts & Dividers</li>
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Laminated Box Finishes</li>
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Heavy-Duty Logistics Cartons</li>
+      <li><svg class="tick" viewBox="0 0 20 20" fill="currentColor"><path d="M8 14.2 4.3 10.5l1.4-1.4L8 11.4l6.3-6.3 1.4 1.4z"/></svg> Fast Factory Turnaround</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band band--dark" id="areas">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Supply & Delivery</p>
+      <h2 class="d-lg">Based in Agege, supplying nationwide.</h2>
+      <p class="lede">We manufacture locally in Lagos and manage bulk packaging logistics for businesses across the country.</p>
+    </div>
+    <div class="areas rise">
+      <span class="area area--home">Agege</span>
+      <span class="area area--home">Ikeja</span>
+      <span class="area area--home">Apapa</span>
+      <span class="area area--home">Oshodi</span>
+      <span class="area area--home">Ogba</span>
+      <span class="area">Ilupeju</span>
+      <span class="area">Surulere</span>
+      <span class="area">Lekki</span>
+      <span class="area">Victoria Island</span>
+      <span class="area">Agbara</span>
+    </div>
+  </div>
+</section>
+
+<section class="band band--wash" id="quote">
+  <div class="wrap form-grid">
+    <div class="rise">
+      <p class="eyebrow">Request a Bulk Quote</p>
+      <h2 class="d-lg" style="margin:.5rem 0 1rem">Tell us what you need.</h2>
+      <p class="lede">Send us the specifications for your packaging requirements, including dimensions and quantity, and our sales team will provide a comprehensive quote.</p>
+    </div>
+    <div>
+      <div id="quote-form">
+        <div class="field"><label>Your name</label><input type="text"></div>
+        <div class="field"><label>Company name</label><input type="text"></div>
+        <div class="field"><label>Phone number</label><input type="tel"></div>
+        <div class="field"><label>Packaging Type</label>
+          <select>
+            <option>Retail & Product Boxes</option>
+            <option>Corrugated Shipping Cartons</option>
+            <option>Food & FMCG Packaging</option>
+            <option>Custom Printed Boxes</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label>Order Specifications</label><textarea placeholder="Tell us about the dimensions, quantity required, and any print specifics..."></textarea></div>
+        <button class="submit" type="button" id="q-send">Send Enquiry</button>
+      </div>
+      <div class="sent" id="quote-sent" hidden>
+        <strong>Got it — thanks.</strong><br>Our manufacturing team will be in touch with your quote shortly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <div class="mark" style="color:#fff;margin-bottom:.5rem"><span class="mark__a">AB Glorious</span><span class="mark__b" style="color:rgba(255,255,255,.5)">Cartons & Packaging</span></div>
+      <p>Agege Industrial Area, Lagos</p>
+    </div>
+  </div>
+</footer>
+
+<div class="bar">
+  <a href="https://wa.me/2347078776964">WhatsApp Sales</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.rise');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(e){
+      e.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } });
+    }, { rootMargin:'0px 0px -60px 0px', threshold:.08 });
+    items.forEach(function(el){ io.observe(el); });
+  }
+  var btn = document.getElementById('q-send');
+  if (btn) btn.addEventListener('click', function(){
+    document.getElementById('quote-form').hidden = true;
+    var ok = document.getElementById('quote-sent');
+    ok.hidden = false; ok.setAttribute('tabindex','-1'); ok.focus();
+  });
+})();
+</script>
+
+<script>
+window.GC_CODE = 'abglorious-demo';
+window.GC_PAGE = '/';
+</script>
+<script>
+(function(){
+  var code = window.GC_CODE;
+  if (!code || code === 'YOURCODE') return;
+  var base = window.GC_PAGE || '/';
+  window.goatcounter = { path: base };
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://gc.zgo.at/count.js';
+  s.setAttribute('data-goatcounter', 'https://' + code + '.goatcounter.com/count');
+  document.head.appendChild(s);
+})();
+</script>
+
+</body>
+</html>
